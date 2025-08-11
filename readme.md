@@ -1,29 +1,49 @@
-Summary
-I'm working on an solar design for my home and need assistance sizing breakers and electrical panels.
+Summary:
+- This is a work in progress.
+- This is a solar design based on Enphase Gen 4.
 
-I have 400A service with two separate 200A lines feeding two separate breaker boxes.
+Service:
+- 400A service split into two separate 200A lines feeding two separate breaker boxes.
+- Load panel #1 200A rated Bus w/150A main breaker
+- Load panel #2 150A rated Bus w/150A main breaker
+- Load calcs on both boxes are complete.
 
-I don't know the actual load on each of the two main breaker boxes, but I suspect its quite a bit less than the main breakers (150A) each.
+Equipment:
+- Solar Panels: BlueSun BSM550M10-72HBD
+- Microinverters: Enphase IQ8HC (240v / 1.6A)
+- Combiner Box: Enphase IQ Combiner 6C
+- Meter Collar: Enphase Meter Collar (Gen 4)
+- Battery: IQ-10C
+- UPDATED Load Panels: TBD 225A Bus
+- Breakers:
+    - Main - 150A (both)
+    - Solar Backfeed - 100A (array 1) + 125A (array 2)
+    - 
+  
 
-I have two solar arrays:
+Solar arrays:
 1. 30 panels producing 48A continuous
 2. 32 panels producing 51.2A continuous
 
-Array 1 will feed breaker box 1 (200A w/150A main breaker)
-Array 2 will feed breaker box 2 (150A w/150A main breaker)
+- Each Enphase system consists of microinverters (IQ8HC) on each panel, a Combiner Box 6C, and a Meter Collar which creates a microgrid when the grid is down.  The Meter Collar is rated 200A.
+- Power from each array passed through a separate Enphase Combiner Box 6C before terminating in each breaker box.
+- Array 1 will feed UPDATED breaker box 1 (225A w/150A main breaker)
+- Array 2 will feed UPDATED breaker box 2 (225A w/150A main breaker)
+- Each system will have 1 Enphase 10C battery (but I want room to upgrade to two batteries on each system).
 
-Power from each array passed through a separate Enphase Combiner Box 6C before terminating in each breaker box.
 
-Each system will have 1 Enphase 10C batteries (but I want room to upgrade to two batteries on each system).
+Please see the One Line Diagrams, and the system specs for more detail on the proposed equipment.
 
-Each Enphase system consists of microinverters (IQ8HC) on each panel, a Combiner Box 6c, and a Meter Collar which creates a microgrid when the grid is down.  The Meter Collar is rated 200A.
 
-Please see the One Line Diagrams, and the system specs for the proposed equipment.
+TO DO:
+1. Determine if we need to separate critical loads from the main service panel(s), or if moving large loads to combiner box load shed breaker (80a). Can each solar system support the entire load from its attached main load panel?
 
-I need help with:
-1. What is the needed capacity of each of the main load panels (amp capacity) to support the additional back feed from solar / batteries?
-2. What size breakers are needed for the solar back feed from combiner box to each of the breaker boxes (which will have to support the solar from one array plus the battery(ies) passing from the combiner 6c.
-3. If there are issues with capacity (from the number of existing circuits or the addition of solar/battery), how would you recommend to resolve them?
-4. Will this configuration (main load panels, plus solar / battery) meet NEC standards?
-5. (optional) Can you sign the electrical drawings in Massachusetts?
+2. Sign the electrical drawings in Massachusetts
 
+
+DONE:
+1. Determine the required capacity of each of the main load panels (amp capacity) to support the additional back feed from solar / batteries (in other words, what is the minimum bus rating for the load panel given the current load and the new solar backfeed).
+
+2. Determine the breaker sizes needed for the solar backfeed from combiner box to each of the breaker boxes (which will have to support the solar from one array plus the battery(ies) passing from the combiner 6c.
+
+3. Will this configuration (main load panels, plus solar / battery) meet NEC standards?
